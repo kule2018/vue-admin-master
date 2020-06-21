@@ -112,7 +112,7 @@ export default {
       // 总条数
       total: 0,
       // 删除的id
-      delete_id: null
+      delete_id: []
     });
     /** 获取列表 */
     const getData = () => {
@@ -154,7 +154,7 @@ export default {
           type: "success"
         })
         // 清空ID
-        data.delete_id = null;
+        data.delete_id = [];
         // 请求数据
         getData();
       })
